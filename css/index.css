@@ -135,24 +135,23 @@ body {
   height: 100%;
 }
 .container {
-  border: 3px solid black;
   max-width: 40em;
   margin: 0 auto;
 }
 .container header,
 .container footer {
+  justify-content: flex-end;
   margin: 2rem 2rem;
   display: flex;
-  justify-content: flex-end;
 }
 .container header nav a,
 .container footer nav a {
   margin: 1rem;
 }
 .container section {
+  justify-content: space-between;
   margin: 2rem 2rem;
   display: flex;
-  justify-content: space-between;
 }
 @media (max-width: 500px) {
   .container section {
@@ -165,27 +164,27 @@ body {
 }
 @media (max-width: 500px) {
   .container section div {
-    width: 27rem;
-  }
-  .container section div ul {
-    margin-left: 2rem;
-  }
-  .container section div ul li {
-    margin: 0.3em 0;
-  }
-  .container section div p {
-    margin-right: 2rem;
+    width: 20rem;
   }
 }
-.container section h2 {
+.container section div ul {
+  margin-left: 2rem;
+}
+.container section div ul li {
+  margin: 0.3em 0;
+}
+.container section div p {
+  margin-right: 2rem;
+}
+.container h2 {
   text-align: center;
   font-size: 1.3rem;
   margin-bottom: 0.5em;
 }
-.container section table {
+.container table {
   width: 100%;
 }
-.container section table th {
+.container table th {
   text-align: left;
   font-weight: bold;
   font-family: 'Aclonica';

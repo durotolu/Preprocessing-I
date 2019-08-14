@@ -68,7 +68,6 @@ html, body {
 }
 
 .container {
-	border: 3px solid blue;
 	max-width: 40em;
 	margin: 0 auto;	
 
@@ -78,9 +77,9 @@ html, body {
 	
 	@marginSideParagraphAndList: 2rem;
 
-	header, footer {
-		.marginDisplaySection ();
+	header, footer {		
 		justify-content: flex-end;
+		.marginDisplaySection ();
 
 		nav {
 			a {
@@ -92,11 +91,20 @@ html, body {
 
 	section {
 
-		.marginDisplaySection ();
+		@media (max-width: @breakPoint) {
+			display: flex;
+			flex-direction: column;
+		}
+
 		justify-content: space-between;
+		.marginDisplaySection ();
 		
 		div {
 			width: 40em;
+
+			@media (max-width: @breakPoint) {
+				width: 20rem;
+		}
 
 			ul {
 				margin-left: @marginSideParagraphAndList;
@@ -126,8 +134,9 @@ html, body {
 				.bold();
 			}
 		}
-	}
 
+
+		
 	address {
 		margin: @marginRoundSection;
 
@@ -139,5 +148,4 @@ html, body {
 			margin: 0.5em 0;
 		}
 	}
-
-}
+	}
