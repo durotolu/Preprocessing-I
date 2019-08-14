@@ -134,3 +134,59 @@ html,
 body {
   height: 100%;
 }
+.container {
+  border: 3px solid black;
+  max-width: 40em;
+  margin: 0 auto;
+}
+.container #marginRoundSection {
+  margin: 2rem 2rem;
+}
+.container header,
+.container footer {
+  display: flex;
+  justify-content: flex-end;
+  margin: 2rem 2rem;
+}
+.container header nav a,
+.container footer nav a {
+  margin: 1rem;
+}
+.container section {
+  margin: 2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.container section div {
+  width: 40em;
+}
+.container section div ul {
+  margin-left: 2em;
+}
+.container section div ul li {
+  margin: 0.3em 0;
+}
+.container section div p {
+  margin-right: 2em;
+}
+.container section h2 {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 0.5em;
+}
+.container section table {
+  width: 100%;
+}
+.container section table th {
+  text-align: left;
+  font-weight: bold;
+}
+.container address {
+  margin: 2rem 2rem;
+}
+.container address h2 {
+  font-weight: bold;
+}
+.container address p {
+  margin: 0.5em 0;
+}

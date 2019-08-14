@@ -57,3 +57,85 @@ html, body {
 	height: 100%;
 }
 
+.bold () {
+	font-weight: bold;
+	font-family: Aclonica;
+}
+
+.marginDisplaySection () {
+	margin: #marginRoundSection;
+	display: flex;
+}
+
+.container {
+	border: 3px solid black;
+	max-width: 40em;
+	margin: 0 auto;	
+
+
+	#marginRoundSection {
+		margin: 2rem 2rem;
+	}
+
+	#marginSideParagraphAndList {
+		margin: 2rem;
+	}
+
+	header, footer {
+		.marginDisplaySection ();
+		justify-content: flex-end;
+
+		nav a {
+			margin: 1rem;
+		}
+	}
+
+	section {
+		.marginDisplaySection ();
+		justify-content: space-between;
+		
+		div {
+			width: 40em;
+
+			ul {
+				margin-left: #marginSideParagraphAndList;
+
+				li {
+					margin: 0.3em 0;
+				}
+			}
+
+			p {
+				margin-right: #marginSideParagraphAndList;
+			}
+		}
+
+		h2 {
+			text-align: center;
+			font-size: 1.3rem;
+			margin-bottom: 0.5em;
+		}
+
+		table {
+			width: 100%;
+
+			th {
+				text-align: left;
+				.bold();
+			}
+		}
+	}
+
+	address {
+		margin: #marginRoundSection;
+
+		h2 {
+			.bold();
+		}
+
+		p {
+			margin: 0.5em 0;
+		}
+	}
+
+}
