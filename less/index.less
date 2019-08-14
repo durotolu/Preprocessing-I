@@ -59,11 +59,11 @@ html, body {
 
 .bold () {
 	font-weight: bold;
-	font-family: Aclonica;
+	font-family: 'Aclonica';
 }
 
 .marginDisplaySection () {
-	margin: #marginRoundSection;
+	margin: @marginRoundSection;
 	display: flex;
 }
 
@@ -72,25 +72,26 @@ html, body {
 	max-width: 40em;
 	margin: 0 auto;	
 
+	@breakPoint: 500px;
 
-	#marginRoundSection {
-		margin: 2rem 2rem;
-	}
-
-	#marginSideParagraphAndList {
-		margin: 2rem;
-	}
+	@marginRoundSection: 2rem 2rem;
+	
+	@marginSideParagraphAndList: 2rem;
 
 	header, footer {
 		.marginDisplaySection ();
 		justify-content: flex-end;
 
-		nav a {
-			margin: 1rem;
+		nav {
+			a {
+				margin: 1rem;
+			}
+			
 		}
 	}
 
 	section {
+
 		.marginDisplaySection ();
 		justify-content: space-between;
 		
@@ -98,7 +99,7 @@ html, body {
 			width: 40em;
 
 			ul {
-				margin-left: #marginSideParagraphAndList;
+				margin-left: @marginSideParagraphAndList;
 
 				li {
 					margin: 0.3em 0;
@@ -106,7 +107,8 @@ html, body {
 			}
 
 			p {
-				margin-right: #marginSideParagraphAndList;
+				margin-right: @marginSideParagraphAndList;
+				}
 			}
 		}
 
@@ -127,7 +129,7 @@ html, body {
 	}
 
 	address {
-		margin: #marginRoundSection;
+		margin: @marginRoundSection;
 
 		h2 {
 			.bold();
